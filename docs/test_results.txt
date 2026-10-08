@@ -1,0 +1,50 @@
+-- M1 strings
+  PASS  KMP / Z / Rabin-Karp agree with naive on 500 random cases
+  PASS  KMP overlapping matches
+  PASS  KMP empty text
+  PASS  Z-function of aaaaa
+  PASS  Aho-Corasick 'ushers'
+  PASS  Aho-Corasick overlapping 'aa' in 'aaaa' = 3
+-- M2 suffix structures
+  PASS  SA-IS and doubling equal sorted-suffix oracle on 400 random strings
+  PASS  SA('banana')
+  PASS  LCP('banana')
+  PASS  longest repeated substring = ana
+  PASS  SA search 'abra' -> [0,7]
+  PASS  SA search missing pattern
+  PASS  automaton contains / not contains
+  PASS  automaton distinct substring count
+-- M3 advanced DP
+  PASS  Levenshtein kitten/sitting = 3
+  PASS  Damerau swap CA/AC = 1 (Levenshtein = 2)
+  PASS  Damerau 'ca' -> 'abc' = 2 (true DL)
+  PASS  spell-suggest DELYAED -> DELAYED
+  PASS  bitmask DP optimal = 13 = brute-force over permutations, assignment consistent
+  PASS  matrix chain 10x30x5x60 = 4500
+  PASS  matrix chain CLRS-style 26000
+  PASS  optimal BST cost 142, root = key 'c'
+-- M4 network flow
+  PASS  FF = EK = Dinic = 23 (CLRS network)
+  PASS  min-cut capacity equals max-flow
+  PASS  airport network: algorithms agree (270)
+  PASS  Konig: |min vertex cover| = |max matching| and covers all edges (150 random graphs)
+-- M5 NP-completeness & approximation
+  PASS  3-SAT satisfiable <=> k-clique <=> DPLL (80 random formulas vs brute force)
+  PASS  CLIQUE -> INDEPENDENT-SET -> VERTEX-COVER chain valid
+  PASS  unsatisfiable formulas detected
+  PASS  vertex cover 2-approx valid and <= 2*OPT (100 random graphs)
+-- M6 randomized & parallel
+  PASS  randomized quicksort sorts (with duplicates)
+  PASS  quicksort empty / single
+  PASS  sorted input: deterministic >= 20x randomized comparisons
+  PASS  reservoir sampling is uniform (each element ~ k/N = 0.3)
+  PASS  Miller-Rabin equals sieve for n < 5000
+  PASS  Miller-Rabin: Carmichael 561 composite, 2^61-1 prime
+  PASS  Blelloch scan result, span = 6
+  PASS  Blelloch scan non-power-of-two length
+  PASS  thread-pool reduce = 5050
+  PASS  fork/join sum = 5050
+  PASS  tree reduce: value 4950, depth 7
+  PASS  Brent bounds W=1000,D=10,p=4 -> (260, 250)
+
+Result: 42 passed, 0 failed
